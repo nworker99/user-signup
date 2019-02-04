@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <style>
+            .error {
+                color: red;
+            }
+            form {
+                background-color: #eee;
+                padding: 20px;
+                margin: 0 auto;
+                width: 540px;
+                font: 16px sans-serif;
+                border-radius: 10px;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <p>Signup</p>
+        </h1>
+        <credentials>
+                <form action='/welcome' method='post'>
+                    <p>
+                    <label>
+                        Username
+                        <input type='text' name='username'/>
+                        <span class='error'>{{name_error}}</span>
+                    </label>
+                    <br>
+                    <label>
+                        Password
+                        <input type='password' name="password"/>
+                        <span class='error'>{{pass_error}}</span>
+                    </label>
+                    <br>
+                    <label>
+                        Verify Password
+                        <input type='password' name='password2'/>
+                        <span class='error'>{{pass2_error}}</span>
+                    </label>
+                    <br>               
+                    <label>
+                        Email (optional) 
+                        <input type='text' name='email'/>
+                        <span class='error'>{{email_error}}</span>
+                    </label>
+                    <br>
+                        <input type='submit' value='Submit'/>
+                    </p>
+                </form>
+            </credentials>
+            
+    </body>
+</html>
